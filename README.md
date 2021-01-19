@@ -37,7 +37,6 @@ export PORT=$(kubectl get svc first-deployment -o go-template='{{range.spec.port
 echo "Accessing host01:$PORT"
 curl host01:$PORT
 ```
-
 Step 4 - Dashboard
 
 Enable the dashboard using Minikube with the command 
@@ -55,5 +54,7 @@ kubectl get pods -n kubernetes-dashboard -w
 ```
 Once running, the URL to the dashboard is https://2886795288-30000-ollie07.environments.katacoda.com/
 
-Launch a multi-node cluster using Kubeadm
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Launch a multi-node cluster using Kubeadm
 
